@@ -37,7 +37,7 @@
 		}
 
 		var
-		script = document.head.appendChild(document.createElement('script')),
+		script = document.getElementsByTagName('head')[0].appendChild(document.createElement('script')),
 		positionOptions = new PositionOptions(options || {});
 
 		geolocation.timeout = setTimeout(function () {
